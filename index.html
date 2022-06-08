@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Demo</title>
+    <script src="index.js"></script>
+    <script src="layer.js"></script>
+    <link href="https://keycdn.layerjs.org/libs/layerjs/layerjs-0.6.4.css" type="text/css" rel="stylesheet" /> 
+    <style>
+        html {
+  height: 100%;
+}
+body {
+  height:100%;
+}
+[lj-type="stage"] {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.btn-left {
+    float: right;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#arrows {
+    width: 100%;
+}
+
+#arrows>div {
+    width: 100%;
+    pointer-events: none;
+}
+
+.btn-right {
+    float: right;
+}
+
+.btn {
+    margin: 5px;
+    background-color: rgba(128, 128, 128, 0.5);
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    width: 15px;
+    pointer-events: all;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+#content{
+    background-color: white;
+    width: 100vw;
+    margin-top: 120px;
+    
+}
+#nav{
+    background-color: red;
+    height: 60px;
+}
+#company_01{
+    background-color: #D5F8FB;
+    height: 100vh;
+}
+#company_01_title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_01_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#grid-2columns{
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+#grid-2columns img{
+    width: 100%;
+}
+
+
+#company_02{
+    background-color: #D5E8FF;
+    height: 100vh;
+}
+#company_02_title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_02_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_02_grid-2columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+#company_02_grid-2columns img{
+    width: 100%;
+}
+
+
+
+#company_03{
+    background-color: #FFE8DA;
+    height: 100vh;
+}
+#company_03_title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_03_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_03_text{
+    margin: 30px auto 30px auto;
+    width: 75%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+#company_03_text img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#company_04{
+    background-color: #D4EEFA;
+    height: 100vh;
+}
+#company_04_title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_04_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_04_text{
+    margin: 30px auto 30px auto;
+    width: 75%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+#company_04_text img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#company_05{
+    background-color: #D5F8FB;
+    height: 100vh;
+}
+#company_05_title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_05_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_05_text{
+    margin: 30px auto 30px auto;
+    width: 75%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+#company_05_text img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+#company_06{
+    background-color: #D5E8FF;
+    height: 100vh;
+}
+#company_06_title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_06_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_06_text{
+    margin: 30px auto 30px auto;
+    width: 75%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+#company_06_text img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+    </style>
+    
+</head>
+<body>
+
+
+    <div lj-type="stage">
+        <!--  Define a single stage.  -->
+        <!--  Define the layer "slider" for the slides.  -->
+        <!--  The default frame is "frame1" -->
+        <div lj-type="layer" lj-name="slider" lj-default-frame="frame1" lj-native-scroll="false">
+          <!--  Define one frame per slide.  -->
+          <!--  lj-fit-to="cover" will make sure that the stage will be fully filled with the frame.  -->
+          <!--  "neighbors.l"/"r" define which frames will be transitioned to upon left/right swipe gestures. -->
+          <div lj-type="frame" lj-name="frame1" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.r="frame2">
+            <div id="content">
+                    <div id="company_02">
+                        <div id="company_02_title">The Company</div>
+                        <div id="company_02_hr"><hr></div>
+                    <div id="company_02_grid-2columns">
+                        <h1>The Company</h1>
+        
+                      <img src="images/graphics.png" alt="">
+                    </div>
+                    </div>
+            </div>
+
+
+
+
+          </div>
+          <div lj-type="frame" lj-name="frame2" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame1" lj-neighbors.r="frame3">
+            <div id="content">
+                <div id="company_01">
+                    <div id="company_01_title">Thinking Global Acting Local</div>
+                    <div id="company_01_hr"><hr></div>
+                <div id="grid-2columns">
+                    <h1>The Company</h1>
+    
+                  <img src="images/map.png" alt="">
+                </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div lj-type="frame" lj-name="frame3" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame2" lj-neighbors.r="frame4">
+            <div id="content">
+                <div id="company_03">
+                    <div id="company_03_title">Industries</div>
+                    <div id="company_03_hr"><hr></div>
+                <div id="company_03_text">Today, hundreds of customers in a wide range of regulated industries have relied on the SoftExpert integrated corporate governance and process excellence suite to maximize strategic
+                    and operational performance and effectiveness. Every industry has also unique market requirements, business pressures and competitive challenges. SoftExpert professionals develop
+                    in-depth understanding of specific business requirements, rules and constraints that drive every industry sector, providing software solutions that combine industry best practices and
+                    compliance standards with the ability to customize an application to the company's unique needs.
+                <img src="images/industries.png" alt="">
+                </div>
+
+                </div>
+
+            </div>
+          </div>
+
+
+
+          <div lj-type="frame" lj-name="frame4" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame3" lj-neighbors.r="frame5">
+            <div id="content">
+                <div id="company_04">
+                    <div id="company_04_title">Regulations</div>
+                    <div id="company_04_hr"><hr></div>
+                <div id="company_04_text">Today, hundreds of customers in a wide range of regulated industries have relied on the SoftExpert integrated corporate governance and process excellence suite to maximize strategic
+                    and operational performance and effectiveness. Every industry has also unique market requirements, business pressures and competitive challenges. SoftExpert professionals develop
+                    in-depth understanding of specific business requirements, rules and constraints that drive every industry sector, providing software solutions that combine industry best practices and
+                    compliance standards with the ability to customize an application to the company's unique needs.
+                <img src="images/regulations.png" alt="">
+                </div>
+
+                </div>
+            </div>
+          </div>
+
+
+          <div lj-type="frame" lj-name="frame5" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame4" lj-neighbors.r="frame6">
+            <div id="content">
+                <div id="company_04">
+                    <div id="company_04_title">Services</div>
+                    <div id="company_04_hr"><hr></div>
+                <div id="company_04_text">Today, hundreds of customers in a wide range of regulated industries have relied on the SoftExpert integrated corporate governance and process excellence suite to maximize strategic
+                    and operational performance and effectiveness. Every industry has also unique market requirements, business pressures and competitive challenges. SoftExpert professionals develop
+                    in-depth understanding of specific business requirements, rules and constraints that drive every industry sector, providing software solutions that combine industry best practices and
+                    compliance standards with the ability to customize an application to the company's unique needs.
+                <img src="images/regulations.png" alt="">
+                </div>
+
+                </div>
+            </div>
+          </div>
+
+
+          <div lj-type="frame" lj-name="frame6" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame5" lj-neighbors.r="frame7">
+            <div id="content">
+                <div id="company_06">
+                    <div id="company_06_title">Some Customers</div>
+                    <div id="company_06_hr"><hr></div>
+                <div id="company_06_text">
+                <img src="images/some_customers.png" alt="">
+                </div>
+
+                </div>
+            </div>
+          </div>
+
+
+            
+
+        </div>
+        <!--  A second layer for the controls -->
+        <div lj-type="layer" lj-native-scroll="false" id="arrows">
+          <!--  The control frame. The frame will be centered in the stage. -->
+          <div id="nav">
+            <!--  the link will trigger the transition to the previous frame of the currently active frame in layer "slider". -->
+            <a class="btn-right btn" id="btn-right" href="#slider.!right&p=left"> > </a>
+            <a class="btn-left btn" id="btn-left" href="#slider.!left&p=right"> < </a>
+        </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

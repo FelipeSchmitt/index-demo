@@ -10,6 +10,18 @@
 // M src/framework/router/router.js
 
 
+/** SOFTEXPERT **/
+/** SOFTEXPERT **/
+/** SOFTEXPERT **/
+/** SOFTEXPERT **/
+/** SOFTEXPERT **/
+/** SOFTEXPERT **/
+
+/** Esse JavaScript pertence à biblioteca Layer.JS, esse código é praticamente original, a única adaptação feita foi o tempo de duração das transições de slides.
+Para mudar o tempo de transição: CTRL + F para pesquisar conteúdo no VSCode e digite "defaultDuration", encontrará o valor em segundos... **/
+
+
+
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.arrayIteratorImpl=function(e){var m=0;return function(){return m<e.length?{done:!1,value:e[m++]}:{done:!0}}};$jscomp.arrayIterator=function(e){return{next:$jscomp.arrayIteratorImpl(e)}};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;
 $jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(e,m,l){e!=Array.prototype&&e!=Object.prototype&&(e[m]=l.value)};$jscomp.getGlobal=function(e){e=["object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global,e];for(var m=0;m<e.length;++m){var l=e[m];if(l&&l.Math==Math)return l}return globalThis};$jscomp.global=$jscomp.getGlobal(this);$jscomp.SYMBOL_PREFIX="jscomp_symbol_";
 $jscomp.initSymbol=function(){$jscomp.initSymbol=function(){};$jscomp.global.Symbol||($jscomp.global.Symbol=$jscomp.Symbol)};$jscomp.SymbolClass=function(e,m){this.$jscomp$symbol$id_=e;$jscomp.defineProperty(this,"description",{configurable:!0,writable:!0,value:m})};$jscomp.SymbolClass.prototype.toString=function(){return this.$jscomp$symbol$id_};

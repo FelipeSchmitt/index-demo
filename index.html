@@ -8,265 +8,7 @@
     <script src="index.js"></script>
     <script src="layer.js"></script>
     <link href="https://keycdn.layerjs.org/libs/layerjs/layerjs-0.6.4.css" type="text/css" rel="stylesheet" /> 
-    <style>
-        html {
-  height: 100%;
-}
-body {
-  height:100%;
-}
-[lj-type="stage"] {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    margin: auto;
-}
-.btn-left {
-    float: right;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-}
-
-#arrows {
-    width: 100%;
-}
-
-#arrows>div {
-    width: 100%;
-    pointer-events: none;
-}
-
-.btn-right {
-    float: right;
-}
-
-.btn {
-    margin: 5px;
-    background-color: rgba(128, 128, 128, 0.5);
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-    border-radius: 50%;
-    width: 15px;
-    pointer-events: all;
-    height: 15px;
-    line-height: 15px;
-    text-align: center;
-}
-#content{
-    background-color: white;
-    width: 100vw;
-    margin-top: 120px;
-    
-}
-#nav{
-    background-color: red;
-    height: 60px;
-}
-#company_01{
-    background-color: #D5F8FB;
-    height: 100vh;
-}
-#company_01_title{
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #056FE0;
-    font-family: 'Roboto';
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-#company_01_hr hr{
-    width: 75%;
-    border-color: #C9F0F9;
-}
-#grid-2columns{
-    display: grid;
-    grid-template-columns: 0.6fr 1.4fr;
-    margin: auto;
-    width: 75%;
-    text-align: center;
-}
-#grid-2columns img{
-    width: 100%;
-}
-
-
-#company_02{
-    background-color: #D5E8FF;
-    height: 100vh;
-}
-#company_02_title{
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #056FE0;
-    font-family: 'Roboto';
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-#company_02_hr hr{
-    width: 75%;
-    border-color: #C9F0F9;
-}
-#company_02_grid-2columns{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    width: 75%;
-    text-align: center;
-}
-#company_02_grid-2columns img{
-    width: 100%;
-}
-
-
-
-#company_03{
-    background-color: #FFE8DA;
-    height: 100vh;
-}
-#company_03_title{
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #056FE0;
-    font-family: 'Roboto';
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-#company_03_hr hr{
-    width: 75%;
-    border-color: #C9F0F9;
-}
-#company_03_text{
-    margin: 30px auto 30px auto;
-    width: 75%;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-}
-#company_03_text img{
-    width: 100%;
-    margin-top: 20px;
-}
-
-
-#company_04{
-    background-color: #D4EEFA;
-    height: 100vh;
-}
-#company_04_title{
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #056FE0;
-    font-family: 'Roboto';
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-#company_04_hr hr{
-    width: 75%;
-    border-color: #C9F0F9;
-}
-#company_04_text{
-    margin: 30px auto 30px auto;
-    width: 75%;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-}
-#company_04_text img{
-    width: 100%;
-    margin-top: 20px;
-}
-
-#company_05{
-    background-color: #D5F8FB;
-    height: 100vh;
-}
-#company_05_title{
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #056FE0;
-    font-family: 'Roboto';
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-#company_05_hr hr{
-    width: 75%;
-    border-color: #C9F0F9;
-}
-#company_05_text{
-    margin: 30px auto 30px auto;
-    width: 75%;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-}
-#company_05_text img{
-    width: 100%;
-    margin-top: 20px;
-}
-
-
-
-
-#company_06{
-    background-color: #D5E8FF;
-    height: 100vh;
-}
-#company_06_title{
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #056FE0;
-    font-family: 'Roboto';
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-#company_06_hr hr{
-    width: 75%;
-    border-color: #C9F0F9;
-}
-#company_06_text{
-    margin: 30px auto 30px auto;
-    width: 75%;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-}
-#company_06_text img{
-    width: 100%;
-    margin-top: 20px;
-}
-        
-        
-
-@media screen and (max-width:840px){
-    
-#content{
-    overflow-y: scroll;
-}
-
-
-
-    </style>
-    
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -297,7 +39,7 @@ body {
 
           </div>
           <div lj-type="frame" lj-name="frame2" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame1" lj-neighbors.r="frame3">
-            <div id="content">
+            <div id="content">         <!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
                 <div id="company_01">
                     <div id="company_01_title">Thinking Global Acting Local</div>
                     <div id="company_01_hr"><hr></div>
@@ -312,7 +54,7 @@ body {
 
 
           <div lj-type="frame" lj-name="frame3" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame2" lj-neighbors.r="frame4">
-            <div id="content">
+            <div id="content"> <!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
                 <div id="company_03">
                     <div id="company_03_title">Industries</div>
                     <div id="company_03_hr"><hr></div>
@@ -331,7 +73,7 @@ body {
 
 
           <div lj-type="frame" lj-name="frame4" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame3" lj-neighbors.r="frame5">
-            <div id="content">
+            <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
                 <div id="company_04">
                     <div id="company_04_title">Regulations</div>
                     <div id="company_04_hr"><hr></div>
@@ -348,7 +90,7 @@ body {
 
 
           <div lj-type="frame" lj-name="frame5" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame4" lj-neighbors.r="frame6">
-            <div id="content">
+            <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
                 <div id="company_04">
                     <div id="company_04_title">Services</div>
                     <div id="company_04_hr"><hr></div>
@@ -365,7 +107,7 @@ body {
 
 
           <div lj-type="frame" lj-name="frame6" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame5" lj-neighbors.r="frame7">
-            <div id="content">
+            <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
                 <div id="company_06">
                     <div id="company_06_title">Some Customers</div>
                     <div id="company_06_hr"><hr></div>
@@ -377,8 +119,108 @@ body {
             </div>
           </div>
 
+          <div lj-type="frame" lj-name="frame7" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame6" lj-neighbors.r="frame8">
+            <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
+          
+                <div id="company_07">
+                    <div id="company_07_title">The Business Dilemma: Excellence or Extinction?</div>
+                    <div id="company_07_hr"><hr></div>
+                    <div id="company_07_grid_2col">
+                        <div id="company_07_text1">
+                            <h1>The global marketplace</h1>
+                            <li>Fast-growing competition</li>
+                            <li>Shortening product lifecycle</li>
+                            <li>Growing customer demands</li>
+                            <li>Increasing price sensitivity</li>
+                            <li>Reducing customer loyalty</li>
+                            <li>Decreasing employee retention</li>
+                            <li>Growing regulatory pressures</li>
+                            <li>Declining operating margins</li>
+                            <li>Growing economic instability</li>
+                        </div>
+                        <div id="company_07_text2">
+                            <h1>Sucess factors</h1>
+                            <li>Product innovation</li>
+                            <li>Price competitiveness</li>
+                            <li>Product quality</li>
+                            <li>Customer satisfaction</li>
+                            <li>Human capital performance</li>
+                            <li>Operational efficiency</li>
+                            <li>Regulatory compliance</li>
+                            <li>Operational cost</li>
+                            <li>Business profitability</li>
+                        </div>
 
+                    </div>
             
+                </div>
+            </div>
+          </div>
+
+
+          <div lj-type="frame" lj-name="frame8" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame7" lj-neighbors.r="frame9">
+            <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
+
+                <div id="company_08">
+                    <div id="company_08_title">Business Process and Performance Excellence</div>
+                    <div id="company_08_hr"><hr></div>
+                    <div id="company_08_grid_2cols">
+                        <img src="images/vision_02.png" alt="" id="img_01">
+                        <img src="images/vision_02_02.png" alt="" id="img_02">
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            
+
+
+            <div lj-type="frame" lj-name="frame9" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame8" lj-neighbors.r="frame10">
+            <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
+                <div id="company_09">
+                    <div id="company_09_title">The Business Excellence Puzzle</div>
+                    <div id="company_09_hr"><hr></div>
+                    <div id="company_09_image_map">
+                        <img src="images/downloads3.png" alt="">
+                    </div>
+                    <div id="company_09_sub_title">Click and learn more about the ideal solution for your company</div>
+                </div>
+
+
+            </div>
+            </div>
+
+
+            <div lj-type="frame" lj-name="frame10" lj-fit-to="cover" lj-no-scrolling="true" lj-start-position="center" lj-neighbors.l="frame9" lj-neighbors.r="frame11">
+                <div id="content"><!--  Dentro desta div, codifique o conteúdo que deseja mostrar!  -->
+                    <div id="company_10">
+                        <div id="company_10_title">The IT Dilemma: Building or Breaking Business Excellence</div>
+                        <div id="company_10_hr"><hr></div>
+                        <div id="company_10_grid_2cols">
+                            <div id="company_10_text">
+                                <p><strong>SoftExpert Excellence Suite</strong> is the most comprehensive solution to
+                                collaboratively solve the most criticai business performance
+                                excellence challenges through an integrated multi-application
+                                environment.
+                                <br></br>
+                                With SoftExpert Excellence Suite, <strong>interconnected applications in a
+                                single collaborative workplace replace many isolated management
+                                systems</strong> that address only a few initiatives of a business, leading to
+                                huge reductions in inefficiencies and errors caused by duplicated
+                                functionality, lack of visibility and inconsistent information.
+                                </p>
+                            </div>
+                            <div id="company_10_img">
+                                <img src="images/sesuitexmultivendor.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
 
         </div>
         <!--  A second layer for the controls -->

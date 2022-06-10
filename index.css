@@ -106,6 +106,7 @@ a{
         text-decoration: none;
         width: 100%;
     }
+
 }
 /** Estilização separada destinada ao frame 1 do slide!**/
 
@@ -476,6 +477,48 @@ a{
         font-size: 16px;
     }
 
+
+}
+
+@media screen and (max-width: 840px) {
+    #company_07_grid_2col{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    #company_07_text1{
+        padding-right: 0px;
+        border-style: solid;
+        padding-bottom: 30px;
+        border-width: 3px;
+        color: white;
+    }
+    #company_07_text2{
+        padding-left: 0px;
+        border-style: solid;
+        padding-bottom: 30px;
+        border-width: 3px;
+        color: white;
+    }
+    #company_07_text1 li, #company_07_text2 li{
+        list-style: none;
+        line-height: 2;
+        color: black;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+    }
+    #company_07_text1 h1, #company_07_text2 h1{
+        font: 600 24px 'Roboto';
+        padding: 15px;
+        color: white;
+    }
+    #company_07_text1 h1{
+        background-color: #0BD7A4;
+    }
+    #company_07_text2 h1{
+        background-color: #FF9900;
+    }
 
 }
 

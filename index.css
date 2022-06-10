@@ -283,7 +283,7 @@ a{
 }
 #company_04_text img{
     width: 100%;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -581,6 +581,23 @@ a{
 
 }
 
+@media screen and (max-width: 840px) {
+    #company_08_grid_2cols{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    #company_08_grid_2cols img{
+        padding-bottom: 30px;
+    }
+    #company_08_grid_2cols #img_01{
+        width: 90%;
+    }
+    #company_08_grid_2cols #img_02{
+        width: 80%;
+    }
+}
+
 
 /** Estilização separada destinada ao frame 9 do slide!**/
 
@@ -841,6 +858,61 @@ a{
     
 
 
+}
+
+@media screen and (max-width: 840px) {
+    #company_11_grid_2cols{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    #company_11_text1{
+        border: solid;
+        border-color: #f3f8ff;
+        border-width: 2px;
+        padding: 0;
+        text-align: center;
+
+        height: 100%;
+        width: 100%;
+    }
+    #company_11_text1 h1{
+        text-align: center;
+        font: 600 24px 'Roboto';
+        color: #1D67B0;
+        background-color: rgb(255, 255, 255);
+        padding:10px;
+    }
+    #company_11_text1 li{
+        font: 500 16px 'Roboto';
+        list-style: none;
+        line-height: 2;
+    }
+    #company_11_text2{
+
+        border: solid;
+        border-color: #f3f8ff;
+        border-width: 2px;
+        padding: 0;
+        text-align: center;
+
+        height: 100%;
+        width: 100%
+    }
+    #company_11_text2 h1{
+        text-align: center;
+        font: 600 24px 'Roboto';
+        color: #EA480F;
+        padding:10px;
+        background-color: rgb(0, 0, 0);
+
+    }
+    #company_11_text2 li{
+        font: 500 16px 'Roboto';
+        list-style: none;
+        line-height: 2;
+    }
+    
 }
 
 

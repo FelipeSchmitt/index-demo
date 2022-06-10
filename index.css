@@ -22,25 +22,27 @@ body {
 }
 #arrows>div {
     width: 100%;
-    pointer-events: none;
 }
 .btn-right {
     float: right;
 }
 .btn {
     margin: 5px;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: #2972C9;
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
-    padding: 15px;
+    color:#E6E6E6;
+    padding: 10px;
     border-radius: 50%;
-    width: 15px;
+    width: 20px;
     pointer-events: all;
-    height: 15px;
-    line-height: 15px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
+}
+.btn:hover, .btn:active {
+    box-shadow: 0 0 0 4px #363636;
 }
 
 /** Content é uma div presente em cada slide, essa div tem como objetivo preencher todo o espaço da tela do usuário para exibir
@@ -51,18 +53,66 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
 #content{
     background-color: white;
     width: 100vw;
-    margin-top: 120px;
+    height: 100vh;
 }
 #nav{
-    background-color: red;
-    height: 60px;
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    position: fixed;
+}
+#home, #company, #vision, #solution{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font: 600 24px 'Roboto';
+    line-height: 46px;
+    border-radius: 7px;
+    margin: 2px;
+}
+a{
+    text-decoration: none;
+    width: 100%;
+}
+#home{
+    background-color: #056FE0;
+}
+#company{
+    background-color: #42C583;
+}
+#vision{
+    background-color: #C8782C;
+}
+#solution{
+    background-color: #AD1B59;
+}
+#home:hover, #company:hover, #vision:hover, #solution:hover{
+    box-shadow: inset 0em 0em 0em 2px white;
+    cursor: pointer;
 }
 
+@media screen and (max-width: 840px) {
+    #home, #company, #vision, #solution{
+        width: 100%;
+        text-align: center;
+        color: white;
+        font: 600 16px 'Roboto';
+        line-height: 46px;
+        border-radius: 0px;
+        margin: 2px;
+    }
+    a{
+        text-decoration: none;
+        width: 100%;
+    }
+}
 /** Estilização separada destinada ao frame 1 do slide!**/
 
 #company_01{
     background-color: #D5F8FB;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_01_title{
     text-align: center;
@@ -87,10 +137,22 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
 #grid-2columns img{
     width: 100%;
 }
+
+@media screen and (max-width: 1366px) {
+    #company_01_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+}
+
+
+
 /** Estilização separada destinada ao frame 2 do slide!**/
 #company_02{
     background-color: #D5E8FF;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_02_title{
     text-align: center;
@@ -116,11 +178,25 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     width: 100%;
 }
 
+@media screen and (max-width: 1366px) {
+    #company_02_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_02_grid-2columns img{
+        margin: auto;
+        width: 90%;
+    }
+}
+
+
 /** Estilização separada destinada ao frame 3 do slide!**/
 
 #company_03{
     background-color: #FFE8DA;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_03_title{
     text-align: center;
@@ -136,7 +212,7 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     border-color: #C9F0F9;
 }
 #company_03_text{
-    margin: 30px auto 30px auto;
+    margin: 30px auto auto auto;
     width: 75%;
     font-family: 'Roboto';
     font-size: 20px;
@@ -149,12 +225,37 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     margin-top: 20px;
 }
 
+
+@media screen and (max-width: 1366px) {
+    #company_03_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_03_text{
+        margin: 30px auto auto auto;
+        width: 75%;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+    #company_03_text img{
+        display: block;
+        margin: auto;
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
 /** Estilização separada destinada ao frame 4 do slide!**/
 
 
 #company_04{
     background-color: #D4EEFA;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_04_title{
     text-align: center;
@@ -170,7 +271,7 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     border-color: #C9F0F9;
 }
 #company_04_text{
-    margin: 30px auto 30px auto;
+    margin: 30px auto auto auto;
     width: 75%;
     font-family: 'Roboto';
     font-size: 20px;
@@ -183,12 +284,31 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1366px) {
+    #company_04_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_04_text{
+        font-size: 16px;
+    }
+    #company_04_text img{
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+}
+
 /** Estilização separada destinada ao frame 5 do slide!**/
 
 
 #company_05{
     background-color: #D5F8FB;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
+
 }
 #company_05_title{
     text-align: center;
@@ -204,7 +324,7 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     border-color: #C9F0F9;
 }
 #company_05_text{
-    margin: 30px auto 30px auto;
+    margin: 30px auto auto auto;
     width: 75%;
     font-family: 'Roboto';
     font-size: 20px;
@@ -217,12 +337,15 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     margin-top: 20px;
 }
 
+
 /** Estilização separada destinada ao frame 6 do slide!**/
 
 
 #company_06{
     background-color: #D5E8FF;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_06_title{
     text-align: center;
@@ -238,7 +361,7 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     border-color: #C9F0F9;
 }
 #company_06_text{
-    margin: 30px auto 30px auto;
+    margin: 30px auto auto auto;
     width: 75%;
     font-family: 'Roboto';
     font-size: 20px;
@@ -251,12 +374,30 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1366px) {
+    #company_06_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_06_text{
+        font-size: 16px;
+    }
+    #company_06_text img{
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+}
+
 /** Estilização separada destinada ao frame 7 do slide!**/
 
 
 #company_07{
     background-color: #D5F8FB;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_07_title{
     text-align: center;
@@ -316,12 +457,36 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     background-color: #FF9900;
 }
 
+
+@media screen and (max-width: 1366px) {
+    #company_07_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_07_text1 h1, #company_07_text2 h1{
+        font: 600 24px 'Roboto';
+    }
+    #company_07_text1 li, #company_07_text2 li{
+        list-style: none;
+        line-height: 2;
+        color: black;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+}
+
+
 /** Estilização separada destinada ao frame 8 do slide!**/
 
 
 #company_08{
     background-color: #FCECE2;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_08_title{
     text-align: center;
@@ -353,13 +518,34 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     width: 70%;
 }
 
+@media screen and (max-width: 1366px) {
+    #company_08_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_08_grid_2cols #img_01{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    #company_08_grid_2cols #img_02{
+        display: block;
+        margin: auto;
+        width: 65%;
+    }
+
+
+}
+
 
 /** Estilização separada destinada ao frame 9 do slide!**/
 
 
 #company_09{
     background-color: #FFFFFF;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_09_title{
     text-align: center;
@@ -391,12 +577,34 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     text-align: center;
 }
 
+@media screen and (max-width: 1366px) {
+    #company_09_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_09_image_map img{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+    #company_09_sub_title{
+        padding: 8px;
+        font: 600 20px 'Roboto';
+        color: #e68a00;
+        text-align: center;
+    }
+
+
+}
+
 /** Estilização separada destinada ao frame 10 do slide!**/
 
 
 #company_10{
     background-color: #E7FAFD;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
 }
 #company_10_title{
     text-align: center;
@@ -430,6 +638,237 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
     display: block;
     float: right;
     width: 70%;
+}
+
+@media screen and (max-width: 1366px) {
+    #company_10_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_10_text{
+        font: 400 16px 'Roboto';
+        color: black;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    #company_10_img img{
+        display: block;
+        float: right;
+        width: 70%;
+    }
+
+
+}
+
+/** Estilização separada destinada ao frame 11 do slide!**/
+
+
+#company_11{
+    background-color: #D5E8FF;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
+}
+#company_11_title{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_11_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_11_image{
+    width: 80%;
+    display: block;
+    margin: 40px auto;
+}
+#company_11_image img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#company_11_grid_2cols{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+}
+#company_11_text1{
+    height: 100px;
+    border: solid;
+    border-color: #f3f8ff;
+    border-width: 2px;
+    padding-right: 40px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    height: 100%;
+}
+
+#company_11_text1 h1{
+    text-align: center;
+    font: 600 24px 'Roboto';
+    color: #1D67B0;
+}
+#company_11_text1 li{
+    font: 500 18px 'Roboto';
+    list-style: none;
+    line-height: 1.5;
+}
+
+#company_11_text2{
+    height: 100px;
+    border: solid;
+    border-color: #f3f8ff;
+    border-width: 2px;
+    padding-left: 40px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    height: 100%;
+}
+
+#company_11_text2 h1{
+    text-align: center;
+    font: 600 24px 'Roboto';
+    color: #EA480F;
+}
+#company_11_text2 li{
+    font: 500 18px 'Roboto';
+    list-style: none;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1366px) {
+    #company_11_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_11_image{
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+    }
+    #company_11_grid_2cols{
+        display: grid;
+        margin: auto;
+        padding-bottom: 100px;
+        grid-template-columns: 1fr 1fr;
+        width: 75%;
+    }
+    #company_11_text1 h1{
+        text-align: center;
+        font: 600 18px 'Roboto';
+        color: #1D67B0;
+    }
+    #company_11_text1 li{
+        font: 500 14px 'Roboto';
+        list-style: none;
+        line-height: 1.5;
+    }
+    
+    #company_11_text2{
+        height: 100px;
+        border: solid;
+        border-color: #f3f8ff;
+        border-width: 2px;
+        padding-left: 40px;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        height: 100%;
+    }
+    
+    #company_11_text2 h1{
+        text-align: center;
+        font: 600 18px 'Roboto';
+        color: #EA480F;
+    }
+    #company_11_text2 li{
+        font: 500 14px 'Roboto';
+        list-style: none;
+        line-height: 1.5;
+    }
+    
+
+
+}
+
+
+/** Estilização separada destinada ao frame 12 do slide!**/
+
+
+#company_12{
+    background-color: #D5F8FB;
+    min-height: 100vh;
+    max-height: 140vh;
+    padding-top: 60px;
+}
+#company_12_title{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    color: #056FE0;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#company_12_hr hr{
+    width: 75%;
+    border-color: #C9F0F9;
+}
+#company_12_grid_2cols{
+    display: grid;
+    margin: 60px auto 0 auto;
+    width: 75%;
+    grid-template-columns: 0.8fr 1.2fr;
+}
+#company_12_text{
+    display: block;
+    margin: auto;
+    width: 100%;
+    font: 400 20px 'Roboto';
+    color: black;
+    text-align: justify;
+    line-height: 1.5;
+}
+#company_12_img{
+    display: flex;
+
+    width: 100%;
+}
+#company_12_img img{
+    display: block;
+    margin: auto 60px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1366px) {
+    #company_12_title{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #company_12_grid_2cols{
+        display: grid;
+        margin: 30px auto 0 auto;
+        width: 75%;
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+    #company_12_text{
+        display: block;
+        margin: auto;
+        width: 100%;
+        font: 400 14px 'Roboto';
+        color: black;
+        text-align: justify;
+        line-height: 1.5;
+    }
 }
 
 /** Atenção, para criar novos frames(slides), por favor tente seguir o padrão dos demais, conteúdo sempre dentro da div id #content, crie divs especificas para cada frame, não tente reaproveitar

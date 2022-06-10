@@ -1,3 +1,17 @@
+window.addEventListener("", function(){
+	if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+	 (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+	  if (document.documentElement.requestFullScreen) {  
+		document.documentElement.requestFullScreen();  
+	  } else if (document.documentElement.mozRequestFullScreen) {  
+		document.documentElement.mozRequestFullScreen();  
+	  } else if (document.documentElement.webkitRequestFullScreen) {  
+		document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+	  }  
+	}
+	
+})
+
 
 /*** Este bloco pertence ao código responsável por fazer funcionar os slides pelas setas do teclado ***/
 

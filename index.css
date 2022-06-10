@@ -52,14 +52,14 @@ o conteúdo desejado, por isso sempre crie seu conteúdo em html dentro da div #
 #content{
     background-color: white;
     width: 100vw;
-    height: 100vh;
+    margin-top: 50px;
+    height: 90vh;
     overflow-y: scroll;
 }
 div#nav{
     background-color: transparent;
-    height: 50px;
     display: flex;
-    position: fixed;
+    height: 7vh;
     width: 99%;
 }
 #home, #company, #vision, #solution{
@@ -114,7 +114,8 @@ a{
     background-color: #D5F8FB;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 
 
 }
@@ -156,7 +157,8 @@ a{
     background-color: #D5E8FF;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_02_title{
     text-align: center;
@@ -200,7 +202,8 @@ a{
     background-color: #FFE8DA;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_03_title{
     text-align: center;
@@ -259,7 +262,8 @@ a{
     background-color: #D4EEFA;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_04_title{
     text-align: center;
@@ -311,7 +315,8 @@ a{
     background-color: #D5F8FB;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 
 }
 #company_05_title{
@@ -349,7 +354,8 @@ a{
     background-color: #D5E8FF;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_06_title{
     text-align: center;
@@ -401,7 +407,8 @@ a{
     background-color: #D5F8FB;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_07_title{
     text-align: center;
@@ -486,7 +493,7 @@ a{
     #company_07_grid_2col{
         display: grid;
         grid-template-columns: 1fr;
-        width: 95%;
+        width: 90%;
     }
     #company_07_text1{
         padding-right: 0px;
@@ -532,7 +539,8 @@ a{
     background-color: #FCECE2;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_08_title{
     text-align: center;
@@ -608,7 +616,8 @@ a{
     background-color: #FFFFFF;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_09_title{
     text-align: center;
@@ -667,7 +676,8 @@ a{
     background-color: #E7FAFD;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_10_title{
     text-align: center;
@@ -730,7 +740,8 @@ a{
     background-color: #D5E8FF;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_11_title{
     text-align: center;
@@ -925,7 +936,8 @@ a{
     background-color: #D5F8FB;
     min-height: 100vh;
     max-height: 300vh;
-    padding-top: 12vw;
+    padding-top: 4vh;
+    padding-bottom: 100px;
 }
 #company_12_title{
     text-align: center;
